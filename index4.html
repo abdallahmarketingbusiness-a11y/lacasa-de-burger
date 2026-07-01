@@ -595,57 +595,6 @@
  .si-fb { background: rgba(24,119,242,0.12); color: #1877F2; }
  .si-tt { background: rgba(255,255,255,0.06); color: #fff; }
  .si-map { background: rgba(66,133,244,0.12); color: #4285F4; }
-
- /* REVIEWS SECTION */
- .reviews-section {
- padding: 70px 24px 40px;
- border-top: 1px solid var(--border);
- background: radial-gradient(ellipse at 50% 0%, rgba(200,146,42,0.06), transparent 55%);
- }
- .reviews-inner { max-width: 640px; margin: 0 auto; text-align: center; }
- .g-rating-card {
- display: flex; align-items: center; justify-content: center; gap: 14px;
- background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
- padding: 18px 20px; margin-top: 30px;
- }
- .g-rating-num { font-size: 2rem; font-weight: 900; color: var(--gold2); font-family: 'Cairo', sans-serif; }
- .g-rating-stars { color: var(--gold); font-size: 1.1rem; letter-spacing: 2px; }
- .g-rating-count { font-size: 0.75rem; color: var(--muted); }
- .g-rating-txt { text-align: right; }
- .g-review-btn {
- display: inline-flex; align-items: center; gap: 8px; margin-top: 18px;
- background: var(--gold); color: var(--bg); font-weight: 800; font-size: 0.85rem;
- padding: 12px 22px; border-radius: 8px; transition: background 0.2s, transform 0.2s;
- }
- .g-review-btn:hover { background: var(--gold2); transform: translateY(-2px); }
- .g-review-btn svg { width: 16px; height: 16px; }
- .rate-us-box {
- margin-top: 34px; background: var(--card); border: 1px solid var(--border);
- border-radius: var(--radius); padding: 26px 20px;
- }
- .rate-us-title { font-size: 0.95rem; font-weight: 700; color: var(--cream); margin-bottom: 14px; }
- .star-picker { display: flex; justify-content: center; gap: 6px; direction: ltr; }
- .star-picker span {
- font-size: 2rem; cursor: pointer; color: #3A2010; transition: color 0.15s, transform 0.15s;
- }
- .star-picker span.hovered,
- .star-picker span.active { color: var(--gold); transform: scale(1.15); }
- .rate-result { margin-top: 18px; }
- .rate-result.hidden { display: none; }
- .rate-thanks { color: var(--cream); font-size: 0.85rem; margin-bottom: 12px; line-height: 1.7; }
- .rate-feedback-input {
- width: 100%; background: var(--bg); border: 1px solid var(--border); color: var(--cream);
- border-radius: 8px; padding: 12px; font-family: 'Cairo', sans-serif; font-size: 0.85rem;
- margin-bottom: 10px; resize: vertical; min-height: 70px; box-sizing: border-box;
- }
- .rate-send-btn {
- background: var(--gold); color: var(--bg); font-weight: 800; font-size: 0.85rem;
- padding: 10px 20px; border-radius: 8px; border: none; width: 100%; cursor: pointer;
- transition: background 0.2s;
- }
- .rate-send-btn:hover { background: var(--gold2); }
- .g-attrib { font-size: 0.65rem; color: var(--muted); margin-top: 10px; }
-
  footer {
  border-top: 1px solid var(--border);
  padding: 28px 24px 40px; text-align: center;
@@ -960,7 +909,6 @@
     <li><a href="#menu">المنيو</a></li>
     <li><a href="#pizza">بيتزا</a></li>
     <li><a href="#appetizers">مقبلات</a></li>
-    <li><a href="#reviews">تقييمات</a></li>
     <li><a href="#contact">تواصل</a></li>
     <li><a href="tel:01014105059" class="nav-cta">اطلب الآن</a></li>
   </ul>
@@ -973,7 +921,6 @@
   <a href="#menu" onclick="closeMobile()">المنيو</a>
   <a href="#pizza" onclick="closeMobile()">بيتزا</a>
   <a href="#appetizers" onclick="closeMobile()">مقبلات</a>
-  <a href="#reviews" onclick="closeMobile()">تقييمات</a>
   <a href="#contact" onclick="closeMobile()">تواصل</a>
   <a href="tel:01014105059" style="color:var(--gold)">📞 اطلب الآن</a>
 </div>
@@ -1277,57 +1224,6 @@
       📍 قرية لاسرينا مبنى إيجبت — العين السخنة<br>
       📞 للطلبات: 01014105059 &nbsp;·&nbsp; للاستفسارات: 01098890561
     </p>
-  </div>
-</section>
-
-<!-- REVIEWS -->
-<section class="reviews-section reveal" id="reviews">
-  <div class="reviews-inner">
-    <div class="sec-header">
-      <p class="sec-eyebrow">آراء عملائنا</p>
-      <h2 class="sec-title">Reviews</h2>
-      <div class="sec-line"></div>
-    </div>
-
-    <div class="g-rating-card">
-      <div class="g-rating-txt">
-        <div class="g-rating-num">4.7</div>
-        <div class="g-rating-stars">★★★★★</div>
-        <div class="g-rating-count">بناءً على تقييمات جوجل</div>
-      </div>
-    </div>
-
-    <a class="g-review-btn" href="https://www.google.com/maps?cid=16960186052421595759" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.35 11.1h-9.17v2.73h6.51c-.33 3.81-3.5 5.44-6.5 5.44C8.36 19.27 5 16.25 5 12c0-4.1 3.2-7.27 7.2-7.27 3.09 0 4.9 1.97 4.9 1.97L19 4.72S16.56 2 12.1 2C6.42 2 2.03 6.8 2.03 12c0 5.05 4.13 10 10.22 10 5.35 0 9.25-3.67 9.25-9.09 0-1.15-.15-1.81-.15-1.81z"/></svg>
-      قيّم تجربتك على جوجل
-    </a>
-
-    <div class="rate-us-box">
-      <p class="rate-us-title">قيّمنا من داخل الموقع 👇</p>
-      <div class="star-picker" id="starPicker">
-        <span data-v="1">★</span>
-        <span data-v="2">★</span>
-        <span data-v="3">★</span>
-        <span data-v="4">★</span>
-        <span data-v="5">★</span>
-      </div>
-
-      <div class="rate-result hidden" id="ratePositive">
-        <p class="rate-thanks">يسعدنا إنك عجبتك تجربتك معانا! 🙏<br>ياريت تشاركها مع الناس على جوجل، هتفرق معانا كتير.</p>
-        <a class="g-review-btn" style="display:flex;justify-content:center;" href="https://www.google.com/maps?cid=16960186052421595759" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.35 11.1h-9.17v2.73h6.51c-.33 3.81-3.5 5.44-6.5 5.44C8.36 19.27 5 16.25 5 12c0-4.1 3.2-7.27 7.2-7.27 3.09 0 4.9 1.97 4.9 1.97L19 4.72S16.56 2 12.1 2C6.42 2 2.03 6.8 2.03 12c0 5.05 4.13 10 10.22 10 5.35 0 9.25-3.67 9.25-9.09 0-1.15-.15-1.81-.15-1.81z"/></svg>
-          اكتب تقييمك على جوجل
-        </a>
-      </div>
-
-      <div class="rate-result hidden" id="rateNegative">
-        <p class="rate-thanks">شكرًا لصراحتك 🙏<br>اكتبلنا المشكلة وهنتواصل معاك فورًا لحلها.</p>
-        <textarea class="rate-feedback-input" id="rateFeedbackTxt" placeholder="اكتب ملاحظتك هنا..."></textarea>
-        <button class="rate-send-btn" onclick="sendRateFeedback()">إرسال الملاحظة على واتساب</button>
-      </div>
-    </div>
-
-    <p class="g-attrib">Powered by Google</p>
   </div>
 </section>
 
@@ -1776,46 +1672,6 @@
     });
   }, { threshold: 0.06, rootMargin: '0px 0px -40px 0px' });
   document.querySelectorAll('.reveal').forEach(function(el) { revealObs.observe(el); });
-
-  // STAR RATING WIDGET
-  (function() {
-    var picker = document.getElementById('starPicker');
-    if (!picker) return;
-    var stars = picker.querySelectorAll('span');
-    var positiveBox = document.getElementById('ratePositive');
-    var negativeBox = document.getElementById('rateNegative');
-    var chosenValue = 0;
-
-    function paintStars(v) {
-      stars.forEach(function(s) {
-        s.classList.toggle('hovered', parseInt(s.dataset.v) <= v);
-      });
-    }
-
-    stars.forEach(function(s) {
-      s.addEventListener('mouseenter', function() { paintStars(parseInt(s.dataset.v)); });
-      s.addEventListener('click', function() {
-        chosenValue = parseInt(s.dataset.v);
-        stars.forEach(function(x) { x.classList.toggle('active', parseInt(x.dataset.v) <= chosenValue); });
-        positiveBox.classList.add('hidden');
-        negativeBox.classList.add('hidden');
-        if (chosenValue >= 4) {
-          positiveBox.classList.remove('hidden');
-        } else {
-          negativeBox.classList.remove('hidden');
-        }
-      });
-    });
-    picker.addEventListener('mouseleave', function() { paintStars(chosenValue); });
-  })();
-
-  window.sendRateFeedback = function() {
-    var txt = document.getElementById('rateFeedbackTxt');
-    var note = txt ? txt.value.trim() : '';
-    var msg = '\u26a0\ufe0f \u062a\u0642\u064a\u064a\u0645 \u0645\u0646 \u0627\u0644\u0645\u0648\u0642\u0639:\n';
-    msg += note ? note : '\u0639\u0645\u064a\u0644 \u0644\u0645 \u064a\u0643\u062a\u0628 \u062a\u0641\u0627\u0635\u064a\u0644';
-    window.open('https://wa.me/201098890561?text=' + encodeURIComponent(msg), '_blank');
-  };
 
   // SMOOTH SCROLL
   document.querySelectorAll('a[href^="#"]').forEach(function(a) {
